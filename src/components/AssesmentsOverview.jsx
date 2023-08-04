@@ -8,15 +8,15 @@ import link from "../assets/link.svg";
 
 const AssesmentsOverview = () => {
   return (
-    <div className="w-[100%]">
-      <div className=" bg-white h-[734px] w-[100%] mx-5 rounded-md flex flex-col items-center">
-        {/* My assesment */}
+    <div className="w-[100%] bg-white ml-[180px] mr-[18px] overflow-x-hidden rounded-xl ">
+      <div className="  h-[734px] w-[100%]  flex flex-col items-center ">
+        {/* My assesment header*/}
 
         <MyAssesment />
 
         {/* Assessments Overview Section */}
-        <div className="flex  items-start flex-col self-stretch p-5">
-          <div className="w-[1224px] h-[624px] ">
+        <div className="flex  items-start flex-col self-stretch p-5   ">
+          <div className="w-[1230px] h-[624px] ">
             <div className="h-[155px] w-[100%] ">
               <p className="text-[18px] text-[#1C4980] font-medium mb-4">
                 Assessments Overview

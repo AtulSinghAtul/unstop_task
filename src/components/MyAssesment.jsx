@@ -11,7 +11,7 @@ const MyAssesment = () => {
             Assesment
           </p>
           <img
-            className=" wh] stroke-[1px] stroke-[#DADCE0]"
+            className="  stroke-[1px] stroke-[#DADCE0]"
             src={Vector_298}
             alt="Vector_298Img"
           />
@@ -23,7 +23,7 @@ const MyAssesment = () => {
           </p>
         </div>
         <img
-          className="w-[24px] h-[24px] m-4 mr-24"
+          className="w-[24px] h-[24px] m-4 mr-[65px]"
           src={mobile}
           alt="mobileImg"
         />

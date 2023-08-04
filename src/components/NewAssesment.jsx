@@ -12,7 +12,8 @@ const NewAssesment = () => {
 
   return (
     <div>
-      <div className="w-[100%] flex flex-col items-start gap-4">
+      <div className="w-[100%] flex flex-col items-start gap-4 mt-7">
+        <FormModal open={open} setOpen={setOpen} />
         {/* my assesment text  */}
         <div className="flex justify-between items-end w-[1224px] ">
           <p className="text-[#1C4980] text-[18px] font-medium">My Assesment</p>
@@ -21,9 +22,6 @@ const NewAssesment = () => {
         {/*  Assesment box */}
         <div className="flex flex-col items-start gap-8">
           <div className="flex items-start gap-8 w-[1224px]">
-            <FormModal open={open} setOpen={setOpen}>
-              Hello
-            </FormModal>
             {/* New Assesment box */}
             <div
               className="flex flex-col p-[30px] items-center gap-[12px] self-stretch border border-dashed border-[#DADCE0] rounded-xl bg-[#F6F8FA] hover:cursor-pointer"
