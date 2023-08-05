@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import cut from "../assets/cut.svg";
-import arrow_down from "../assets/keyboard_arrow_down.svg";
+import cut from "../../assets/cut.svg";
+import arrow_down from "../../assets/keyboard_arrow_down.svg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -14,7 +14,9 @@ const FormModalData = ({ setOpen }) => {
       <div
         className="fixed top-[0] left-[0] bottom-0 right-0 w-screen h-screen bg-[#5b5b5b5c] "
         onClick={() => setOpen(false)}
-      ></div>
+      >
+        {console.log("setOpen")}
+      </div>
 
       <div
         className="absolute  top-[0%] left-[31%]   z-10   bg-[#fff]  flex flex-col justify-center items-start w-[591px]  rounded-xl my-auto "

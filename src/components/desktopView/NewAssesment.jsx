@@ -1,9 +1,9 @@
 import React from "react";
-import add from "../assets/add.svg";
-import suitcase from "../assets/suitcase.svg";
-import calendar from "../assets/calendar_today.svg";
-import dot from "../assets/Group_6.svg";
-import link from "../assets/link-2.svg";
+import add from "../../assets/add.svg";
+import suitcase from "../../assets/suitcase.svg";
+import calendar from "../../assets/calendar_today.svg";
+import dot from "../../assets/Group_6.svg";
+import link from "../../assets/link-2.svg";
 import FormModal from "./FormModal";
 import { useState } from "react";
 
@@ -13,7 +13,6 @@ const NewAssesment = () => {
   return (
     <div>
       <div className="w-[100%] flex flex-col items-start gap-4 mt-7">
-        <FormModal open={open} setOpen={setOpen} />
         {/* my assesment text  */}
         <div className="flex justify-between items-end w-[1224px] ">
           <p className="text-[#1C4980] text-[18px] font-medium">My Assesment</p>
@@ -22,6 +21,7 @@ const NewAssesment = () => {
         {/*  Assesment box */}
         <div className="flex flex-col items-start gap-8">
           <div className="flex items-start gap-8 w-[1224px]">
+            <FormModal open={open} setOpen={setOpen} />
             {/* New Assesment box */}
             <div
               className="flex flex-col p-[30px] items-center gap-[12px] self-stretch border border-dashed border-[#DADCE0] rounded-xl bg-[#F6F8FA] hover:cursor-pointer"
@@ -146,7 +146,7 @@ const NewAssesment = () => {
               </div>
             </div>
 
-            {/* Math Assesment box-1 */}
+            {/* Math Assesment box-2 */}
 
             <div className="flex p-4 flex-col items-start gap-4 self-stretch rounded-xl border border-[#DADCE0] bg-[#fff]">
               <div className="flex justify-between items-start self-stretch">

@@ -1,14 +1,14 @@
 import React from "react";
 import MyAssesment from "./MyAssesment";
 import NewAssesment from "./NewAssesment";
-import view_agenda from "../assets/view_agenda.svg";
-import double_man from "../assets/double_man.svg";
-import globe from "../assets/globe.svg";
-import link from "../assets/link.svg";
+import view_agenda from "../../assets/view_agenda.svg";
+import double_man from "../../assets/double_man.svg";
+import globe from "../../assets/globe.svg";
+import link from "../../assets/link.svg";
 
 const AssesmentsOverview = () => {
   return (
-    <div className="w-[100%] bg-white ml-[180px] mr-[18px] overflow-x-hidden rounded-xl ">
+    <div className="w-[100%]  bg-white ml-[180px] mr-[18px] overflow-x-hidden rounded-xl ">
       <div className="  h-[734px] w-[100%]  flex flex-col items-center ">
         {/* My assesment header*/}
 

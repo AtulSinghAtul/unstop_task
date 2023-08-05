@@ -1,14 +1,18 @@
+import React from "react";
 import "./App.css";
-import AssesmentsOverview from "./components/AssesmentsOverview";
-import Dashboard from "./components/Dashboard";
+import DesktopView from "./pages/DesktopView";
+// import { Routes, Route } from "react-router-dom";
+import MobileView from "./pages/MobileView";
 
 function App() {
   return (
     <div className="App">
-      <div className=" flex flex-row  justify-between items-start w-[100%]  h-[1532px]   bg-slate-200 ">
-        <Dashboard />
-        <AssesmentsOverview />
-      </div>
+      <DesktopView />
+      <MobileView />
+      {/* <Routes>
+        <Route path="desktop" element={<DesktopView />} />
+        <Route path="mobile" element={<MobileView />} />
+      </Routes> */}
     </div>
   );
 }

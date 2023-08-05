@@ -1,6 +1,7 @@
 import React from "react";
-import Vector_298 from "../assets/Vector 298.svg";
-import mobile from "../assets/mobile_screen_share.svg";
+import Vector_298 from "../../assets/Vector 298.svg";
+import mobile from "../../assets/mobile_screen_share.svg";
+import { Link } from "react-router-dom";
 
 const MyAssesment = () => {
   return (
@@ -22,11 +23,14 @@ const MyAssesment = () => {
             My Assesments
           </p>
         </div>
-        <img
-          className="w-[24px] h-[24px] m-4 mr-[65px]"
-          src={mobile}
-          alt="mobileImg"
-        />
+
+        <Link to="/mobile">
+          <img
+            className="w-[24px] h-[24px] m-4 mr-[65px]"
+            src={mobile}
+            alt="mobileImg"
+          />
+        </Link>
       </div>
     </div>
   );
