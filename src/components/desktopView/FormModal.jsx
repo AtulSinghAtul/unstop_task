@@ -10,6 +10,7 @@ const FormModal = ({ open, setOpen }) => {
   }
 
   if (!open) return open;
+
   return PortalReactDOM.createPortal(
     <FormModalData open={open} setOpen={setOpen} />,
     document.querySelector(".portals")

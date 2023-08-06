@@ -6,8 +6,18 @@ import battery from "../../assetsMobile/battery.svg";
 import { Link } from "react-router-dom";
 import segment from "../../assetsMobile/segment.svg";
 import laptop from "../../assetsMobile/laptop_mac.svg";
+import { useState } from "react";
+import MobileDashboard from "./mobileDashboard/MobileDashboard";
 
 const AssesmentHead = () => {
+  const [open, setOpen] = useState(false);
+
+  if (open) {
+    document.body.style.overflowY = "hidden";
+  } else {
+    document.body.style.overflowY = "scroll";
+  }
+
   return (
     <>
       <section className="fixed top-[0px] z-10 flex flex-col items-start bg-white ]">
@@ -41,9 +51,16 @@ const AssesmentHead = () => {
 
         {/* bar section */}
 
+        {open ? <MobileDashboard open={open} setOpen={setOpen} /> : ""}
+
         <div className="flex justify-between items-center w-[375px] h-[50px] px-[15px]">
           <div className="flex items-center gap-[10px]">
-            <div className="flex justify-center items-center gap-[10px] p-[10px] w-[40px] h-[40px] rounded-[60px] bg-[#F2F8FE]">
+            <div
+              className="flex justify-center items-center gap-[10px] p-[10px] w-[40px] h-[40px] rounded-[60px] bg-[#F2F8FE] hover:cursor-pointer"
+              onClick={() => {
+                setOpen(true);
+              }}
+            >
               <img
                 className="w-[30px] h-[30px] shrink-0"
                 src={segment}

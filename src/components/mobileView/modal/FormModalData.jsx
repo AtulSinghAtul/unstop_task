@@ -19,7 +19,7 @@ const FormModalData = ({ setOpen }) => {
       </div>
 
       {/* align center to mobile modal */}
-      <div className="w-screen h-screen m-auto flex justify-center items-center">
+      <div className=" flex justify-center items-center">
         <div
           className="absolute  top-[11%]     z-[100]   bg-[#fff]  flex flex-col justify-center items-start   rounded-xl my-auto w-[375px] "
           data-aos-anchor-placement="top-bottom"

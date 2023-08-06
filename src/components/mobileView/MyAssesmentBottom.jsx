@@ -3,6 +3,7 @@ import MathCommonAssement from "./mobileCommonAssesment/MathCommonAssement";
 import MathSingleLogoBox from "./mobileCommonAssesment/MathSingleLogoBox";
 import NewAssesmentBox from "./mobileCommonAssesment/NewAssesmentBox";
 import MyAssesmentSearchBox from "./mobileCommonAssesment/MyAssesmentSearchBox";
+// import ChartBar from "../chartBar/ChartBar";
 
 const MyAssesmentBottom = ({ open, setOpen }) => {
   return (
@@ -10,6 +11,7 @@ const MyAssesmentBottom = ({ open, setOpen }) => {
       <div className="flex flex-col items-start gap-[20px] w-[375px]  py-[20px] px-[15px] bg-white mt-[135px]">
         <div className="flex flex-col items-start gap-[20px]">
           <div className="flex flex-col items-start gap-[10px]">
+            {/* <ChartBar /> */}
             {/* w-345 My Assesment  part-1*/}
             <MyAssesmentSearchBox />
 

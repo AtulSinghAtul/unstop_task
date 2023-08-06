@@ -1,14 +1,9 @@
 import React from "react";
 import add from "../../../assetsMobile/add.svg";
-// import { useState } from "react";
-// import FormModal from "../modal/FormModal";
 
 const NewAssesmentBox = ({ open, setOpen }) => {
-  // const [flag, setFlag] = useState(false);
-
   return (
     <div>
-      {/* <FormModal open={flag} setOpen={setFlag} /> */}
       <div
         className="flex flex-col justify-center  items-center gap-[12px] self-stretch border border-dashed border-[#DADCE0] rounded-xl bg-[#F6F8FA] hover:cursor-pointer py-[20px] px-[30px]"
         onClick={() => setOpen(true)}
